@@ -86,8 +86,10 @@ export default function ServiceSection() {
         </Box>
       </Container>
       <ModalVideo
-        autoplay
-        channel='youtube'
+        youtube={{
+          autoplay: 1,
+          mute: 1,
+        }}
         isOpen={videoOpen}
         videoId='x_me3xsvDgk'
         onClose={() => setVideoOpen(false)}
